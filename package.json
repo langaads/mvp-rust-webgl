@@ -1,0 +1,30 @@
+{
+  "name": "mvp-rust-webgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --port 9000 --open",
+    "build:rs": "sudo rustup run nightly cargo build --target wasm32-unknown-unknown",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langaads/mvp-rust-webgl.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/langaads/mvp-rust-webgl/issues"
+  },
+  "homepage": "https://github.com/langaads/mvp-rust-webgl#readme",
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "0.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "text-encoding": "^0.7.0",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.0"
+  }
+}
